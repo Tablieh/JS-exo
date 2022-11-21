@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-exo1</title>
+</head>
+<body>
+    <h1>Description du DOM</h1>
+    <ul>
+        <li>
+            Le DOM est une interface de programmation
+        </li>
+        <li>
+            l'acronyme signifie : Document Object Model
+        </li>
+        <li>
+            Il représente les noeuds interconnectés (balises) d'une page HTML
+        </li>
+    </ul>
+</body>
+<script>
+
+    let list = document.querySelector("ul")
+
+    let ListElement = list.querySelectorAll("li")
+
+    //console.log("La liste", list)
+    //console.log("les élément", ListElement)
+    ListElement.forEach(function(element){
+        //console.dir(element)
+        element.style.color = "red"
+    })
+</script>
+</html>
